@@ -1,5 +1,5 @@
 //
-//  MCViewController.h
+//  MCQuestionViewController.h
 //  MultipleChoice
 //
 //  Created by JJ Garzella on 3/15/14.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Question.h"
 
-@interface MCViewController : UIViewController
+@interface MCQuestionViewController : UIViewController
 
-@property (nonatomic, strong) UIManagedDocument *database;
+@property (nonatomic, strong) Question *question;
 
 @end

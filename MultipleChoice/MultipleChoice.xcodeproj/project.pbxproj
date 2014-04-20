@@ -22,6 +22,13 @@
 		417EC25018D4791D00D62C37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417EC22F18D4791C00D62C37 /* UIKit.framework */; };
 		417EC25818D4791D00D62C37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417EC25618D4791D00D62C37 /* InfoPlist.strings */; };
 		417EC25A18D4791D00D62C37 /* MultipleChoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EC25918D4791D00D62C37 /* MultipleChoiceTests.m */; };
+		417EC26618D47E0F00D62C37 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 417EC26418D47E0F00D62C37 /* Model.xcdatamodeld */; };
+		417EC27618D4809D00D62C37 /* FourTextQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EC27518D4809D00D62C37 /* FourTextQuestion.m */; };
+		417EC27918D4809D00D62C37 /* FourImageQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EC27818D4809D00D62C37 /* FourImageQuestion.m */; };
+		417EC27C18D4809D00D62C37 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EC27B18D4809D00D62C37 /* Test.m */; };
+		417EC27F18D4809E00D62C37 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EC27E18D4809E00D62C37 /* Question.m */; };
+		417EC28218D480D800D62C37 /* MCQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EC28118D480D800D62C37 /* MCQuestionViewController.m */; };
+		419BA6DD19036281001D5C25 /* Test+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 419BA6DC19036281001D5C25 /* Test+Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,19 @@
 		417EC25518D4791D00D62C37 /* MultipleChoiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultipleChoiceTests-Info.plist"; sourceTree = "<group>"; };
 		417EC25718D4791D00D62C37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		417EC25918D4791D00D62C37 /* MultipleChoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleChoiceTests.m; sourceTree = "<group>"; };
+		417EC26518D47E0F00D62C37 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		417EC27418D4809D00D62C37 /* FourTextQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourTextQuestion.h; sourceTree = "<group>"; };
+		417EC27518D4809D00D62C37 /* FourTextQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourTextQuestion.m; sourceTree = "<group>"; };
+		417EC27718D4809D00D62C37 /* FourImageQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourImageQuestion.h; sourceTree = "<group>"; };
+		417EC27818D4809D00D62C37 /* FourImageQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourImageQuestion.m; sourceTree = "<group>"; };
+		417EC27A18D4809D00D62C37 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		417EC27B18D4809D00D62C37 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		417EC27D18D4809E00D62C37 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		417EC27E18D4809E00D62C37 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		417EC28018D480D800D62C37 /* MCQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCQuestionViewController.h; sourceTree = "<group>"; };
+		417EC28118D480D800D62C37 /* MCQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCQuestionViewController.m; sourceTree = "<group>"; };
+		419BA6DB19036281001D5C25 /* Test+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test+Utils.h"; sourceTree = "<group>"; };
+		419BA6DC19036281001D5C25 /* Test+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Test+Utils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +134,14 @@
 		417EC23118D4791C00D62C37 /* MultipleChoice */ = {
 			isa = PBXGroup;
 			children = (
+				417EC27318D47FD700D62C37 /* Model */,
 				417EC23A18D4791C00D62C37 /* MCAppDelegate.h */,
 				417EC23B18D4791C00D62C37 /* MCAppDelegate.m */,
 				417EC23D18D4791C00D62C37 /* Main_iPhone.storyboard */,
 				417EC24018D4791C00D62C37 /* Main_iPad.storyboard */,
 				417EC24318D4791C00D62C37 /* MCViewController.h */,
 				417EC24418D4791C00D62C37 /* MCViewController.m */,
+				417EC26318D47DA500D62C37 /* Qustions */,
 				417EC24618D4791C00D62C37 /* Images.xcassets */,
 				417EC23218D4791C00D62C37 /* Supporting Files */,
 			);
@@ -153,6 +175,33 @@
 				417EC25618D4791D00D62C37 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		417EC26318D47DA500D62C37 /* Qustions */ = {
+			isa = PBXGroup;
+			children = (
+				417EC28018D480D800D62C37 /* MCQuestionViewController.h */,
+				417EC28118D480D800D62C37 /* MCQuestionViewController.m */,
+			);
+			name = Qustions;
+			sourceTree = "<group>";
+		};
+		417EC27318D47FD700D62C37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				417EC26418D47E0F00D62C37 /* Model.xcdatamodeld */,
+				417EC27D18D4809E00D62C37 /* Question.h */,
+				417EC27E18D4809E00D62C37 /* Question.m */,
+				417EC27A18D4809D00D62C37 /* Test.h */,
+				417EC27B18D4809D00D62C37 /* Test.m */,
+				417EC27718D4809D00D62C37 /* FourImageQuestion.h */,
+				417EC27818D4809D00D62C37 /* FourImageQuestion.m */,
+				417EC27418D4809D00D62C37 /* FourTextQuestion.h */,
+				417EC27518D4809D00D62C37 /* FourTextQuestion.m */,
+				419BA6DB19036281001D5C25 /* Test+Utils.h */,
+				419BA6DC19036281001D5C25 /* Test+Utils.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +304,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				417EC23C18D4791C00D62C37 /* MCAppDelegate.m in Sources */,
+				417EC27C18D4809D00D62C37 /* Test.m in Sources */,
 				417EC24518D4791C00D62C37 /* MCViewController.m in Sources */,
 				417EC23818D4791C00D62C37 /* main.m in Sources */,
+				417EC28218D480D800D62C37 /* MCQuestionViewController.m in Sources */,
+				417EC27918D4809D00D62C37 /* FourImageQuestion.m in Sources */,
+				417EC27F18D4809E00D62C37 /* Question.m in Sources */,
+				419BA6DD19036281001D5C25 /* Test+Utils.m in Sources */,
+				417EC27618D4809D00D62C37 /* FourTextQuestion.m in Sources */,
+				417EC26618D47E0F00D62C37 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +531,7 @@
 				417EC25F18D4791D00D62C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		417EC26018D4791D00D62C37 /* Build configuration list for PBXNativeTarget "MultipleChoiceTests" */ = {
 			isa = XCConfigurationList;
@@ -483,8 +540,22 @@
 				417EC26218D4791D00D62C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		417EC26418D47E0F00D62C37 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				417EC26518D47E0F00D62C37 /* Model.xcdatamodel */,
+			);
+			currentVersion = 417EC26518D47E0F00D62C37 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 417EC22018D4791C00D62C37 /* Project object */;
 }
