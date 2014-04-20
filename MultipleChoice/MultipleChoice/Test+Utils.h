@@ -10,4 +10,7 @@
 
 @interface Test (Utils)
 
++ (Test *)testWithQuestions:(NSOrderedSet *)questions
+     inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

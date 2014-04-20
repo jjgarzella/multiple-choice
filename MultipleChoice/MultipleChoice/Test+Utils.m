@@ -10,4 +10,16 @@
 
 @implementation Test (Utils)
 
++ (Test *)testWithQuestions:(NSOrderedSet *)questions
+     inManagedObjectContext:(NSManagedObjectContext *)context
+{
+    Test *test = [NSEntityDescription insertNewObjectForEntityForName:@"Test"
+                                               inManagedObjectContext:context];
+    
+    
+    test.questions = questions;
+    
+    return test;
+}
+
 @end
