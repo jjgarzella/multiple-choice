@@ -10,6 +10,4 @@
 
 @interface MCViewController : UIViewController
 
-@property (nonatomic, strong) UIManagedDocument *database;
-
 @end

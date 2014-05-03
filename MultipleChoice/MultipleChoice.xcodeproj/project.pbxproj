@@ -29,6 +29,7 @@
 		417EC27F18D4809E00D62C37 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EC27E18D4809E00D62C37 /* Question.m */; };
 		417EC28218D480D800D62C37 /* MCQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EC28118D480D800D62C37 /* MCQuestionViewController.m */; };
 		419BA6DD19036281001D5C25 /* Test+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 419BA6DC19036281001D5C25 /* Test+Utils.m */; };
+		419BA6E01907FACE001D5C25 /* CoreDataDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419BA6DF1907FACE001D5C25 /* CoreDataDocumentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		417EC28118D480D800D62C37 /* MCQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCQuestionViewController.m; sourceTree = "<group>"; };
 		419BA6DB19036281001D5C25 /* Test+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test+Utils.h"; sourceTree = "<group>"; };
 		419BA6DC19036281001D5C25 /* Test+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Test+Utils.m"; sourceTree = "<group>"; };
+		419BA6DE1907FACE001D5C25 /* CoreDataDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDocumentController.h; sourceTree = "<group>"; };
+		419BA6DF1907FACE001D5C25 /* CoreDataDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDocumentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +144,7 @@
 				417EC24018D4791C00D62C37 /* Main_iPad.storyboard */,
 				417EC24318D4791C00D62C37 /* MCViewController.h */,
 				417EC24418D4791C00D62C37 /* MCViewController.m */,
-				417EC26318D47DA500D62C37 /* Qustions */,
+				417EC26318D47DA500D62C37 /* Questions */,
 				417EC24618D4791C00D62C37 /* Images.xcassets */,
 				417EC23218D4791C00D62C37 /* Supporting Files */,
 			);
@@ -177,13 +180,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		417EC26318D47DA500D62C37 /* Qustions */ = {
+		417EC26318D47DA500D62C37 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
 				417EC28018D480D800D62C37 /* MCQuestionViewController.h */,
 				417EC28118D480D800D62C37 /* MCQuestionViewController.m */,
+				419BA6DE1907FACE001D5C25 /* CoreDataDocumentController.h */,
+				419BA6DF1907FACE001D5C25 /* CoreDataDocumentController.m */,
 			);
-			name = Qustions;
+			name = Questions;
 			sourceTree = "<group>";
 		};
 		417EC27318D47FD700D62C37 /* Model */ = {
@@ -309,6 +314,7 @@
 				417EC23818D4791C00D62C37 /* main.m in Sources */,
 				417EC28218D480D800D62C37 /* MCQuestionViewController.m in Sources */,
 				417EC27918D4809D00D62C37 /* FourImageQuestion.m in Sources */,
+				419BA6E01907FACE001D5C25 /* CoreDataDocumentController.m in Sources */,
 				417EC27F18D4809E00D62C37 /* Question.m in Sources */,
 				419BA6DD19036281001D5C25 /* Test+Utils.m in Sources */,
 				417EC27618D4809D00D62C37 /* FourTextQuestion.m in Sources */,
